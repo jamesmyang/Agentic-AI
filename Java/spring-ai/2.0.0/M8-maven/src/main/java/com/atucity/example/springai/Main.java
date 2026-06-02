@@ -11,7 +11,7 @@ public class Main {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         // Retrieve the bean from the Spring container
-        ChatService service = context.getBean("com.atucity.example.springai.service.impl.OpenAiChatClientChatServiceImpl", ChatService.class);
+        ChatService service = context.getBean("com.atucity.example.springai.service.impl.OpenAiChatClientBuilderChatServiceImpl", ChatService.class);
 
         System.out.println(service.chat("Tell me a bad joke"));
 

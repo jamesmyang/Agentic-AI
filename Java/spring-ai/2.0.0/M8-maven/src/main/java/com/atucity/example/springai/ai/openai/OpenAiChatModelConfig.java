@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@PropertySource("classpath:application-openai-model.properties")
+@PropertySource("classpath:application-openai-chatmodel.properties")
 public class OpenAiChatModelConfig {
 
 
