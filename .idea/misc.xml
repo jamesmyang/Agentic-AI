@@ -7,8 +7,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/Java/langgraph4j-getting-started/pom.xml" />
-        <option value="$PROJECT_DIR$/Java/langgraph4j-medium/pom.xml" />
+        <option value="$PROJECT_DIR$/Java/spring-ai/2.0.0/M8-maven/pom.xml" />
       </list>
     </option>
   </component>

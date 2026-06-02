@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="langgraph4j-medium" />
         <module name="langgraph4j-getting-started" />
+        <module name="M8-maven" />
       </profile>
     </annotationProcessing>
   </component>
