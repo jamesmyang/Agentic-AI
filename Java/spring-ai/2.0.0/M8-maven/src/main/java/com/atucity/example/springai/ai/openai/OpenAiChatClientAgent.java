@@ -2,6 +2,7 @@ package com.atucity.example.springai.ai.openai;
 
 import com.atucity.example.springai.ai.ChatAgent;
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.messages.Message;
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -22,4 +23,6 @@ public class OpenAiChatClientAgent implements ChatAgent {
     public String chat(String message) {
         return this.chatClient.prompt().user(message).call().content();
     }
+
+
 }

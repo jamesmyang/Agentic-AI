@@ -1,4 +1,4 @@
-package com.atucity.example.springai.ai.openai;
+package com.atucity.example.springai.ai.anthropic;
 
 import com.atucity.example.springai.ai.ChatAgent;
 import org.springframework.ai.chat.messages.Message;
@@ -6,13 +6,13 @@ import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component("com.atucity.example.springai.ai.openai.openAiChatModelAgent")
-public class OpenAiChatModelAgent implements ChatAgent {
+@Component("com.atucity.example.springai.ai.anthropic.anthropicChatModelAgent")
+public class AnthropicChatModelAgent implements ChatAgent {
 
     private ChatModel chatModel;
 
-    public OpenAiChatModelAgent(
-            @Qualifier("com.atucity.example.springai.ai.openai.OpenAiChatModelConfig.openAiChatModel") ChatModel chatModel
+    public AnthropicChatModelAgent(
+            @Qualifier("com.atucity.example.springai.ai.anthropic.AnthropicChatModelConfig.anthropicChatModel") ChatModel chatModel
     ) {
         this.chatModel =  chatModel;
         //System.out.println("1 OpenAiChatModelAgent model: " + this.chatModel);
@@ -26,5 +26,5 @@ public class OpenAiChatModelAgent implements ChatAgent {
         return this.chatModel.call(message);
     }
 
-
 }
+
